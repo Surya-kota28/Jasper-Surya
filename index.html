@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jasper Surya Chowdary Kota // root@security</title>
+<meta name="description" content="Jasper Surya Chowdary Kota — DevOps & Information Security engineer. CI/CD automation, threat detection, and AI-driven security research.">
+<meta property="og:title" content="Jasper Surya Chowdary Kota // root@security">
+<meta property="og:description" content="DevOps & Information Security engineer. CI/CD automation, threat detection, and AI-driven security research.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="boot-screen">
+  <pre id="boot-text"></pre>
+</div>
+
+<div class="progress-bar" id="progress-bar"></div>
+
+<canvas id="matrix"></canvas>
+
+<div class="scanline"></div>
+
+<div class="custom-cursor" id="custom-cursor"></div>
+
+<nav class="navbar">
+  <div class="logo">jsck<span class="cursor">_</span></div>
+  <ul>
+    <li><a href="#about"><span class="nav-num">01_</span>whoami</a></li>
+    <li><a href="#skills"><span class="nav-num">02_</span>capabilities</a></li>
+    <li><a href="#experience"><span class="nav-num">03_</span>experience</a></li>
+    <li><a href="#projects"><span class="nav-num">04_</span>case_files</a></li>
+    <li><a href="#certs"><span class="nav-num">05_</span>credentials</a></li>
+    <li><a href="#beyond"><span class="nav-num">06_</span>beyond_the_terminal</a></li>
+    <li><a href="#contact"><span class="nav-num">07_</span>connect</a></li>
+  </ul>
+  <span class="palette-hint">press <kbd>/</kbd> to search</span>
+</nav>
+
+<div class="command-palette" id="command-palette">
+  <div class="palette-box">
+    <input type="text" id="palette-input" placeholder="goto [section] ... try 'help'" autocomplete="off">
+    <div class="palette-output" id="palette-output"></div>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="terminal-window">
+    <div class="terminal-bar">
+      <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+      <span class="terminal-title">jasper@security:~</span>
+    </div>
+    <div class="terminal-body">
+      <p><span class="prompt">root@security</span>:<span class="path">~</span>$ <span class="typed" id="typed"></span><span class="cursor">_</span></p>
+      <h1 class="glitch" data-text="JASPER SURYA CHOWDARY KOTA">JASPER SURYA CHOWDARY KOTA</h1>
+      <p class="tagline">DEVOPS &amp; INFOSEC INTERN @ CLOVERLEAF // AI-DRIVEN THREAT DETECTION // Cincinnati, OH</p>
+      <p class="sub">eJPT Certified // CI/CD Automation // Malicious-URL ML Research (<strong>0.91 AUC</strong>)</p>
+      <div class="counter-row">
+        <div class="counter-item"><span class="counter" data-target="0.91" data-decimals="2">0</span><span class="counter-label">AUC (IEEE)</span></div>
+        <div class="counter-item"><span class="counter" data-target="120" data-suffix="+">0</span><span class="counter-label">Students Trained</span></div>
+        <div class="counter-item"><span class="counter" data-target="90" data-suffix="%">0</span><span class="counter-label">Faster Triage Built</span></div>
+      </div>
+      <p class="next-up">$ currently_learning --focus="DevSecOps automation, GRC tooling, and AI-augmented CI/CD workflows"</p>
+      <a href="resume.pdf" download class="btn-download">&gt; download_resume.pdf</a>
+      <div class="interactive-terminal" id="interactive-terminal">
+        <div id="terminal-log"></div>
+        <div class="terminal-input-row">
+          <span class="prompt">root@security</span>:<span class="path">~</span>$
+          <input type="text" id="terminal-input" autocomplete="off" spellcheck="false">
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section id="about" class="reveal">
+  <h2><span class="prompt-inline">$</span> whoami</h2>
+  <div class="card">
+    <p>Computer Science graduate student and eJPT-certified security practitioner focused on
+    DevOps automation and AI-driven threat detection. I build CI/CD pipelines with automated
+    code-quality gates, conduct host and network vulnerability assessments, and published IEEE
+    research achieving a 0.91 AUC on malicious-URL classification. Currently a DevOps &amp;
+    Information Security intern at Cloverleaf, working across code, cloud, and security.</p>
+    <div class="tag-row">
+      <span class="tag">M.Eng. Computer Science @ University of Cincinnati</span>
+      <span class="tag">B.Tech Computer Science</span>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="reveal">
+  <h2><span class="prompt-inline">$</span> cat capabilities.json</h2>
+  <div class="grid">
+    <div class="card skill-card">
+      <h3>&gt; Security</h3>
+      <ul>
+        <li>Vulnerability Assessment</li>
+        <li>Host &amp; Network Auditing</li>
+        <li>Metasploit / Reconnaissance</li>
+        <li>Network Scanning &amp; Enumeration</li>
+        <li>Post-Exploitation / System Hacking</li>
+        <li>Phishing &amp; Social-Engineering Analysis</li>
+      </ul>
+    </div>
+    <div class="card skill-card">
+      <h3>&gt; DevOps / CI-CD</h3>
+      <ul>
+        <li>Jenkins / SonarQube</li>
+        <li>Sonar-Scanner</li>
+        <li>Apache Maven</li>
+        <li>Git / GitHub Actions</li>
+        <li>Docker</li>
+      </ul>
+    </div>
+    <div class="card skill-card">
+      <h3>&gt; Cloud</h3>
+      <ul>
+        <li>AWS (CloudFormation, ECS)</li>
+        <li>Google Cloud Platform</li>
+        <li>Azure</li>
+      </ul>
+    </div>
+    <div class="card skill-card">
+      <h3>&gt; Programming</h3>
+      <ul>
+        <li>Python</li>
+        <li>Java</li>
+        <li>SQL</li>
+        <li>C / C++</li>
+        <li>HTML</li>
+      </ul>
+    </div>
+    <div class="card skill-card">
+      <h3>&gt; OS &amp; Tools</h3>
+      <ul>
+        <li>Linux / Kali Linux</li>
+        <li>macOS / Windows</li>
+        <li>Eclipse</li>
+      </ul>
+    </div>
+    <div class="card skill-card">
+      <h3>&gt; Languages</h3>
+      <ul>
+        <li>English (proficient)</li>
+        <li>Hindi (proficient)</li>
+        <li>Telugu (native)</li>
+        <li>Japanese (conversational)</li>
+        <li>German (beginner)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="reveal">
+  <h2><span class="prompt-inline">$</span> tail -f experience.log</h2>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-date">Jun 2026 - Present</div>
+      <div class="card">
+        <h3>DevOps and Info Sec Intern</h3>
+        <p class="org">Cloverleaf · Cincinnati, OH (Hybrid)</p>
+        <ul>
+          <li>Work across the full stack of SaaS infrastructure, from code to cloud to security, contributing to production systems under senior-engineering review using AI-augmented development workflows.</li>
+          <li>DevOps &amp; Infrastructure-as-Code: CI/CD improvements and AWS automation (CloudFormation/ECS).</li>
+          <li>Build internal tooling and agent workflows to automate engineering and operational processes.</li>
+          <li>Run information security automation and a real Governance, Risk &amp; Compliance (GRC) program, triaging security and bug-bounty reports.</li>
+          <li>Contribute feature and reliability fixes to the core platform (Node.js/GraphQL API, Next.js client) with full test coverage.</li>
+          <li>Work daily in Linux/shell environments, Docker-based local dev, and Git/GitHub CI workflows.</li>
+          <li>Built and hardened an automated bug-bounty triage pipeline that cut triage and response time by 90%, while keeping every decision human-gated instead of relying on blind automation.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-date">Dec 2025 - Present</div>
+      <div class="card">
+        <h3>DSP | Student Worker | IMPACT</h3>
+        <p class="org">University of Cincinnati - College of Education, Criminal Justice, and Human Services · Cincinnati, OH (On-site)</p>
+        <ul>
+          <li>Support adults with intellectual and developmental disabilities through IMPACT Innovation, part of UC's IDD Education Center.</li>
+          <li>Assist participants with work-based learning, lifelong learning, and health-related activities, acting as a job coach and driver.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-date">Aug 2025 - Present</div>
+      <div class="card">
+        <h3>Treasurer</h3>
+        <p class="org">University of Cincinnati Telugu Association (UCTA)</p>
+        <ul>
+          <li>Managed and allocated a budget exceeding $15,000 to support organizational goals and community activities.</li>
+          <li>Directed financial planning and cross-team coordination for a major university event hosting over 600 attendees.</li>
+          <li>Handled critical administrative duties including drafting urgent funding requests, tracking project tasks, and ensuring strict financial compliance with university guidelines.</li>
+          <li>Served as co-anchor for the primary event program, blending financial oversight with direct community engagement.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-date">Dec 2024 - Jun 2026</div>
+      <div class="card">
+        <h3>Machine Learning Researcher</h3>
+        <p class="org">Freelance · Vijayawada East, Andhra Pradesh, India</p>
+        <ul>
+          <li>Led "Scalable Malicious URL Classification: Leveraging Lexical Analysis and API Integration," classifying URLs using supervised machine learning methods.</li>
+          <li>Integrated real-time API calls to Urlscan.io to gather dynamic scanned-URL information.</li>
+          <li>Added HTML feature extraction from target pages to strengthen detection.</li>
+          <li>Published as IEEE research at ICMLAS 2025.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-date">Jul 2024 - Aug 2024</div>
+      <div class="card">
+        <h3>Security Analyst</h3>
+        <p class="org">Mastercard · Freelance, Remote</p>
+        <ul>
+          <li>Served as an analyst on Mastercard's Security Awareness Team, identifying and reporting security threats such as phishing.</li>
+          <li>Analyzed which areas of the business needed more robust security training and implemented training courses and procedures for those teams, contributing to an <strong>86% reduction</strong> in phishing susceptibility.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-date">Jun 2024 - Jul 2024</div>
+      <div class="card">
+        <h3>Cyber Security Intern</h3>
+        <p class="org">ExcelR · Remote</p>
+        <ul>
+          <li>Focused on assessment methodologies and host and network auditing.</li>
+          <li>Used Kali Linux to perform host and network auditing across multiple methodologies, including Nmap, Hydra, John the Ripper, and Metasploit.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-date">Oct 2024</div>
+      <div class="card">
+        <h3>DevOps Trainer</h3>
+        <p class="org">Dhanekula Institute of Engineering and Technology · Vijayawada, India</p>
+        <ul>
+          <li>Led a team of 4 to deliver a 5-day hands-on DevOps workshop, upskilling <strong>120+ students</strong>.</li>
+          <li>Integrated Jenkins and SonarQube to automate code-quality gates, cutting manual review time.</li>
+          <li>Guided participants through building and deploying 120+ Java mini-projects via a full CI pipeline.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-date">May 2023 - Jul 2023</div>
+      <div class="card">
+        <h3>Machine Learning Intern</h3>
+        <p class="org">Codegnan IT Solutions · Vijayawada, India</p>
+        <ul>
+          <li>Worked on web scraping, exploratory data analysis, web frameworks, ML model training/testing, and AWS deployment.</li>
+          <li>Completed a project on predictive models for delivery-time estimation using machine learning.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="reveal">
+  <h2><span class="prompt-inline">$</span> ls -la case_files/</h2>
+  <div class="grid">
+    <div class="card project-card">
+      <div class="project-header">
+        <span class="badge">IEEE / ICMLAS 2025</span>
+      </div>
+      <h3>Scalable Malicious URL Classification</h3>
+      <p>Lexical Analysis + API Integration</p>
+      <ul>
+        <li>Published IEEE research analyzing the ISCXURL-2016 dataset (<strong>11,964 URLs</strong>) to improve phishing detection.</li>
+        <li>Achieved a <strong>0.91 AUC</strong> with a Random Forest ensemble over 9 lexical features.</li>
+        <li>Built a hybrid detection system combining the model with real-time Urlscan.io API verdicts.</li>
+      </ul>
+      <a href="https://ieeexplore.ieee.org/document/10967695" target="_blank" class="project-link">&gt; view_on_ieeexplore</a>
+    </div>
+    <div class="card project-card">
+      <div class="project-header">
+        <span class="badge">LEADERSHIP</span>
+      </div>
+      <h3>UCTA Treasury Management</h3>
+      <p>Treasurer, University of Cincinnati Telugu Association</p>
+      <ul>
+        <li>Manage a <strong>$15,000</strong> event budget and secured corporate sponsorship for events serving <strong>600+ attendees</strong>.</li>
+        <li>Own allocation, tracking, and <strong>100% compliance</strong> of organizational funds under university financial policy.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="certs" class="reveal">
+  <h2><span class="prompt-inline">$</span> gpg --list-keys certifications</h2>
+  <div class="cert-grid">
+    <div class="cert-flip">
+      <div class="cert-flip-inner">
+        <div class="cert-face cert-front">eJPT</div>
+        <div class="cert-face cert-back"><strong>INE Certified Junior Penetration Tester</strong><span>Issued by INE</span></div>
+      </div>
+    </div>
+    <div class="cert-flip">
+      <div class="cert-flip-inner">
+        <div class="cert-face cert-front">Google Cybersecurity</div>
+        <div class="cert-face cert-back"><strong>Google Cybersecurity Professional</strong><span>Issued by Google / Coursera</span></div>
+      </div>
+    </div>
+    <div class="cert-flip">
+      <div class="cert-flip-inner">
+        <div class="cert-face cert-front">TryHackMe</div>
+        <div class="cert-face cert-back"><strong>TryHackMe PT1</strong><span>SOC Level 1 track</span></div>
+      </div>
+    </div>
+    <div class="cert-flip">
+      <div class="cert-flip-inner">
+        <div class="cert-face cert-front">Cisco DCAIE</div>
+        <div class="cert-face cert-back"><strong>AI Solutions on Cisco Infrastructure Essentials</strong><span>Issued by Cisco</span></div>
+      </div>
+    </div>
+    <div class="cert-flip">
+      <div class="cert-flip-inner">
+        <div class="cert-face cert-front">ICCA</div>
+        <div class="cert-face cert-back"><strong>ICCA (Cloud)</strong><span>Issued by INE / eLearnSecurity</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="beyond" class="reveal">
+  <h2><span class="prompt-inline">$</span> cat /home/jasper/off_the_clock.md</h2>
+  <div class="grid">
+    <div class="card skill-card">
+      <h3>&gt; Anime Binge-Watcher</h3>
+      <p>Always mid-series on something. Ask me for a recommendation, I always have one ready.</p>
+    </div>
+    <div class="card skill-card">
+      <h3>&gt; Off-Grid Recharge</h3>
+      <p>I unplug on purpose. Camping and time off the grid keep me sane between sprints and CTFs.</p>
+    </div>
+    <div class="card skill-card">
+      <h3>&gt; Bikes &amp; Cars</h3>
+      <p>Genuinely obsessed with anything on two or four wheels. Engines are basically hardware I can't patch.</p>
+    </div>
+    <div class="card skill-card">
+      <h3>&gt; Cooking</h3>
+      <p>My other favorite craft. Nothing beats watching someone smile over a plate I made from scratch.</p>
+    </div>
+    <div class="card skill-card">
+      <h3>&gt; Camping &amp; Outings</h3>
+      <p>Happiest outdoors with good people, a fire, and no signal.</p>
+    </div>
+    <div class="card skill-card">
+      <h3>&gt; Giving Back</h3>
+      <p>Big believer in paying it forward, whether that's mentoring, volunteering, or just showing up for people.</p>
+    </div>
+  </div>
+</section>
+
+
+<section id="contact" class="reveal">
+  <h2><span class="prompt-inline">$</span> ./establish_connection.sh</h2>
+  <div class="card contact-card">
+    <p>&gt; Connection request initiated...</p>
+    <p>&gt; Target: Jasper Surya Chowdary Kota</p>
+    <p>&gt; Status: <span class="online">ONLINE</span></p>
+    <div class="contact-links">
+      <div class="copy-row">
+        <a href="mailto:kotajy@mail.uc.edu">kotajy@mail.uc.edu</a>
+        <button class="copy-btn" data-copy="kotajy@mail.uc.edu">copy</button>
+      </div>
+      <a href="https://www.linkedin.com/in/jasper-surya-chowdary-kota9494/" target="_blank">linkedin.com/in/jasper-surya-chowdary-kota9494</a>
+      <a href="https://github.com/Surya-kota28" target="_blank">github.com/Surya-kota28</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>&copy; <span id="year"></span> Jasper Surya Chowdary Kota // built from the terminal, for the terminal</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
