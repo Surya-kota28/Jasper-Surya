@@ -483,6 +483,17 @@ footer {
   padding-top: 0.8rem;
   font-size: 0.82rem;
 }
+.terminal-hint {
+  color: var(--green-dim);
+  margin-bottom: 0.5rem;
+}
+.terminal-hint code {
+  border: 1px solid var(--border);
+  padding: 1px 6px;
+  border-radius: 3px;
+  font-family: inherit;
+  color: var(--green);
+}
 #terminal-log {
   max-height: 140px;
   overflow-y: auto;
